@@ -8,6 +8,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.MultiAutoCompleteTextView;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import com.example.zln.myapplication.R;
@@ -44,7 +45,7 @@ public class MainActivity extends Activity {
         rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-
+                Toast.makeText(MainActivity.this,"text",Toast.LENGTH_SHORT);
             }
         });
     }
